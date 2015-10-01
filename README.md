@@ -33,6 +33,7 @@ Lastly, if you use this implementation, please read and cite the following refer
 * [B. Chen, J.J. Potoff, and J.I.  Siepmann, J. Phys. Chem. B 105, 3093 (2001).](http://dx.doi.org/10.1021/jp003882x)
 * [H.S. Ashbaugh, L. Liu, and L.N. Surampudi. J.Chem. Phys. 135, 054510 (2011).](http://dx.doi.org/10.1063/1.3623267)
 * [J. L. F. Abascal and C. Vega, J. Chem. Phys 123 234505 (2005).](http://dx.doi.org/10.1063/1.2121687)
+* [C. D. Wick, M. G. Martin and J. I. Siepmann, J. Phys. Chem. B, 104, 8008 (2000).](http://dx.doi.org/10.1021/jp001044x)
 
 ## A few implementation notes
 
@@ -62,5 +63,6 @@ GROMACS. That said, it is up to the user to ensure that the parameters are
 correct and that simulations are set up according to the methods presented in
 the papers above. There are several other TraPPE papers out there with more
 parameters for different types of molecules - I haven't implemented those yet.
-This current implementation only includes linear and branched alkanes and
-alcohols. Be sure to check out the [TraPPE website](http://siepmann6.chem.umn.edu/trappe/index.php).
+This current implementation only includes linear and branched alkanes,
+alcohols, and aromatic molecules.
+Be sure to check out the [TraPPE website](http://siepmann6.chem.umn.edu/trappe/index.php).

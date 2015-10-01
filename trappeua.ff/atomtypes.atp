@@ -9,3 +9,9 @@
   CH_C      13.01900 ; CH attached to any carbon group
   C_O       12.01100 ; Single carbon attached to an oxygen
   C_C       12.01100 ; Single carbon attached to any carbon group
+  CH2_sp2   14.02700 ; CH2 sp2 carbon (ethene)
+  CH_sp2    13.01900 ; CH sp2 carbon (2-alkene)
+  C_sp2     12.01100 ; C sp2 carbon (isobutene)
+  CH_aro    13.01900 ; aromatic CH (benzene)
+  C_toaro   12.01100 ; carbon attached to aromatic ring (alkylbenzene)
+  C_arolink 12.01100 ; aromatic carbon linking rings (naphthalene)
