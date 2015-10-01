@@ -186,3 +186,26 @@
   CH2  C    O    H    3     1.35991   4.07974   0.00000   -5.43965   0.00000   0.00000
   CH   C    O    H    3     1.35991   4.07974   0.00000   -5.43965   0.00000   0.00000
   C    C    O    H    3     1.35991   4.07974   0.00000   -5.43965   0.00000   0.00000
+; CHx CH2 CH = Csp2Hy Fourier type
+; In Paper (Kelvin and not to be halved):  CH3  CH2  Csp2 Csp2 (688.5), 86.36, -109.77, -282.24
+; 0th coefficient ignored? Doesn't affect force
+  CH3  CH2  Csp2 Csp2 5    1.43607    -1.82536 -4.69335    0.00000
+; Rotation around bond linking to aromatic ring
+; proper dihedral utors = e0 (1 - cos(2phi + e1))
+; Caro Caro CH2 CHx e0 = 131 K, e1 = pi
+  Caro Caro CH2 CH3   1      180.0    1.08919  2
+  Caro Caro CH2 CH2   1      180.0    1.08919  2
+  Caro Caro CH2 CH    1      180.0    1.08919  2
+  Caro Caro CH2 C     1      180.0    1.08919  2
+; Caro Caro Csp2 CHx e0 = 167, e1 = 5pi / 3
+  Caro Caro Csp2 CH3  1      300.0    1.38852  2
+  Caro Caro Csp2 CH2  1      300.0    1.38852  2
+  Caro Caro Csp2 CH   1      300.0    1.38852  2
+  Caro Caro Csp2 C    1      300.0    1.38852  2
+; Rotation around double bond
+; CHx - Csp2 = Csp2 - CHy
+; different values for cis and trans
+; harmonic torsion utor = kphi (phi - phi0)^2
+; CH3 Csp2 Csp2 CH3   2      180.0     445.6552  ;; TRANS
+; CH3 Csp2 Csp2 CH3   2        0.0     412.3973  ;; CIS
+
