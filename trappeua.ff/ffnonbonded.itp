@@ -26,7 +26,7 @@
   CH_sp2    Csp2         13.01900   0.000    A       3.73000e-01  3.90780e-01; 47.0 K CH(sp2)
   C_sp2     Csp2         12.01100   0.000    A       3.85000e-01  1.66289e-01; 20.0 K C(sp2)
   CH_aro    Caro         13.01900   0.000    A       3.69500e-01  4.19880e-01; 50.5 K CH(aro)
-  C_2aro    CH2          12.01100   0.000    A       3.88000e-01  1.74604e-01; 21.0 K R-C(aro)
+  R_Caro    Caro         12.01100   0.000    A       3.88000e-01  1.74604e-01; 21.0 K R-C(aro)
   C_nap     Caro         12.01100   0.000    A       3.77000e-01  2.49434e-01; 30.0 K C(aro link)
 ; tip4p2005
 ; J. L. F. Abascal and C. Vega, J. Chem. Phys 123 234505 (2005)
