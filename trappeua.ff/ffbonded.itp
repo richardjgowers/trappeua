@@ -24,6 +24,10 @@
   C    O     1       0.1430    502416.0
 ; O-H
   O    H     1       0.0945    502416.0
+; Caro CHx
+  Caro CH3   1       0.1510    502416.0
+  Caro CH2   1       0.1510    502416.0
+  Caro CH    1       0.1510    502416.0
 ; Caro Caro
   Caro Caro  1       0.1400    502416.0
 ; Csp2 Csp2
@@ -91,13 +95,23 @@
   Csp2 Csp2 CH2   1       119.7     585.50442 ; 70420 K
   Csp2 Csp2 CH    1       119.7     585.50442 ; 70420 K
   Csp2 Csp2 C     1       119.7     585.50442 ; 70420 K
+; Should be rigid, but that's impossible in gromacs
+; Instead, use these values from:
+;* [V. A. Harmandaris, N. P. Adhikari, N. F. A. van der Vegt and K. Kremer, Macromolecules, 39, 6708-6719 (2006).](http://dx.doi.org/10.1021/ma0606399)
 ; Caro - [Caro] - CHx
-  Caro Caro CH3   1       120.0     1000.0 ; rigid?
-  Caro Caro CH2   1       120.0     1000.0 ; rigid
-  Caro Caro CH    1       120.0     1000.0 ; rigid
-  Caro Caro C     1       120.0     1000.0 ; rigid
+  Caro Caro CH3   1       120.0     1000.0
+  Caro Caro CH2   1       120.0     1000.0
+  Caro Caro CH    1       120.0     1000.0
+  Caro Caro C     1       120.0     1000.0
 ; Caro - [Caro] - Caro
-  Caro Caro Caro  1       120.0     1000.0 ; rigid
+  Caro Caro Caro  1       120.0     1000.0
+; CHx  CHy  Caro
+  CH3  CH   Caro  1       120.0     1000.0
+  CH2  CH   Caro  1       120.0     1000.0
+  CH   CH   Caro  1       120.0     1000.0
+  CH3  CH2  Caro  1       120.0     1000.0
+  CH2  CH2  Caro  1       120.0     1000.0
+  CH   CH2  Caro  1       120.0     1000.0
   
 [ dihedraltypes ]
 ; Fourier dihedraltypes translated to Gromacs Ryckaert-Bellemans using the
@@ -209,3 +223,13 @@
 ; CH3 Csp2 Csp2 CH3   2      180.0     445.6552  ;; TRANS
 ; CH3 Csp2 Csp2 CH3   2        0.0     412.3973  ;; CIS
 
+; From * [V. A. Harmandaris, N. P. Adhikari, N. F. A. van der Vegt and K. Kremer, Macromolecules, 39, 6708-6719 (2006).](http://dx.doi.org/10.1021/ma0606399)
+; Improper dihedrals
+  Caro Caro Caro Caro 2 167.4 0.0
+; Caro CHx CHy CH
+  Caro Caro Caro CH   2 167.4 0.0
+; CH CHx CHy Caro ; maintains chirality of polystyrene
+  CH CH2 CH2 Caro     2 334.8 35.26
+  CH CH3 CH2 Caro     2 334.8 35.26
+  CH CH2 CH3 Caro     2 334.8 35.26
+  

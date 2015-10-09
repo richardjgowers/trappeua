@@ -33,7 +33,9 @@ Lastly, if you use this implementation, please read and cite the following refer
 * [B. Chen, J.J. Potoff, and J.I.  Siepmann, J. Phys. Chem. B 105, 3093 (2001).](http://dx.doi.org/10.1021/jp003882x)
 * [H.S. Ashbaugh, L. Liu, and L.N. Surampudi. J.Chem. Phys. 135, 054510 (2011).](http://dx.doi.org/10.1063/1.3623267)
 * [J. L. F. Abascal and C. Vega, J. Chem. Phys 123 234505 (2005).](http://dx.doi.org/10.1063/1.2121687)
+For aromatics:
 * [C. D. Wick, M. G. Martin and J. I. Siepmann, J. Phys. Chem. B, 104, 8008 (2000).](http://dx.doi.org/10.1021/jp001044x)
+* [V. A. Harmandaris, N. P. Adhikari, N. F. A. van der Vegt and K. Kremer, Macromolecules, 39, 6708-6719 (2006).](http://dx.doi.org/10.1021/ma0606399)
 
 ## A few implementation notes
 
